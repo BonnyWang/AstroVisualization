@@ -30,10 +30,10 @@ This is suitable for people who are used to python programming experience but ar
         ```    
 #### Start creating particles in Blender
 1. Open Blender and create a new "General" file
-    ![alt text](Pictures\Create.png)
+    ![alt text](/Pictures/Create.png)
 2. Click on the cube in the center of the view and hit delete.
 3. On the top banner, select "Scripting" tab.
-    ![alt text](Pictures\ScriptTab.png)
+    ![alt text](/Pictures/ScriptTab.png)
 4. Click on "+ New" to create a new script.
 5. Import libraries
     ```
@@ -43,7 +43,26 @@ This is suitable for people who are used to python programming experience but ar
     # Import other library as needed
     import pandas as pd
     ```
-6. The following sciprt shows an example of using a particle file to create small cubes in blender
+6. The following sciprt shows an example of using a particle file to create small cubes in blender:
+    ```
+    df = pd.read_csv("file_path")
+    for index, row in df.iterrows():
+        bpy.ops.mesh.primitive_cube_add(size = 0.1, location=(row['x'],row['y'],row['z']))
+
+    ```
+7. Select the "Layout" tab in the top banner and you should see the cubes being created.
+    * For example, if my data file is 
+        ```
+        x,y,z
+        1,0,0
+        2,0,0
+        3,0,0
+        0,1,0
+        0,2,0
+        0,3,0
+        ```
+    * You will be able to see the following in the view port:
+        ![alt text](/Pictures/ExampleData.png)
 
 
 ## Other useful things to look up: 
