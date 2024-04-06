@@ -1,7 +1,16 @@
 # AstroVisualization
 This repo provides examples and resources for creating visualization for astro (scientific) data. 
 
-## Blender Environment setup
+- Create images/videos with Blender:
+  - [Blender environment setup](#blender-environment-setup)
+  - [Particle Data (For small data set)](#particle-data-for-small-data-set)
+    - Also useful for know how to script in blender
+  - [Density field data](#density-field-data)
+  - [Other useful things to look up](#other-useful-things-to-look-up)
+- Create interactive data experience on website with three.js
+   - ... to be added
+
+## Blender environment setup
 1. Install Blender 
     * https://www.blender.org/
 2. To use other Python library (such as pandas ) in Blender, you need to use the Python executable under the Blender folder.
@@ -81,6 +90,7 @@ Usually, they are represented as arrays in x\*x\*x shape where x is resolution o
 5. ** If this does not make sense to you, see more detail with images from above.
 
 There is also an example blender file you can play around with. If you use the default script and data, you should see the following in Blender:
+
 ![alt text](/Pictures/DensField.png)
 
 ## Other useful things to look up: 
