@@ -71,13 +71,17 @@ Density field data is another common data format people can use to create good v
 Usually, they are represented as arrays in x\*x\*x shape where x is resolution of the field.
 
 ### Create density field visualization with Python scripting in Blender
+[The example script](/BlenderExamples/DensityFeildVis.py) should be mostly self-explanatory with detailed comments. Basically, we use [OpenVDB](https://www.openvdb.org/) convert our density field data into vdb files which is commonly used in 3D softwares to visualize complex objects like clouds, smoke and file.
+
+#### Start creating particles in Blender
 1. Open Blender and create a new "General" file
 2. Navigate to the Scripting workspace from the top menu.
-3. Open the script file by selecting File -> Open and navigating to the script's location, or simply paste the example script into a new text block.
+3. Open the script file by selecting File -> Open and navigating to the script's location, or simply paste [the example script](/BlenderExamples/DensityFeildVis.py) into a new text block.
 4. Press Run Script to execute.
 5. ** If this does not make sense to you, see more detail with images from above.
 
 There is also an example blender file you can play around with. If you use the default script and data, you should see the following in Blender:
+![alt text](/Pictures/DensField.png)
 
 ## Other useful things to look up: 
 - Blender scripting documentation
