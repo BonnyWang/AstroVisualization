@@ -1,19 +1,7 @@
 # AstroVisualization
 This repo provides examples and resources for creating visualization for astro (scientific) data. 
 
-## Particle Data
-Particle data is common in astronomical simulations.
-
-Usually, they contains the position information of particles along with related other properties (such as mass, velocity...) as the following:
-| Position.x  | Position.y | Position.z | Property 1 | Property 2|
-| ------------- | ------------- | ------------- | ------------- |------------- |
-| ... | ... | ... |...| ... |
-
-### Create particle visualization with Python scripting in Blender
-
-This is suitable for people who are used to python programming experience but are overwhelmed by the thousands buttons in 3D softwares. 
-
-#### Environment setup
+## Blender Environment setup
 1. Install Blender 
     * https://www.blender.org/
 2. To use other Python library (such as pandas ) in Blender, you need to use the Python executable under the Blender folder.
@@ -28,6 +16,18 @@ This is suitable for people who are used to python programming experience but ar
         ```
         PS C:\Program Files\Blender Foundation\Blender 3.6\3.6\python\bin> .\python.exe -m pip install pandas
         ```    
+## Particle Data (For small data set)
+Particle data is common in astronomical simulations.
+
+Usually, they contains the position information of particles along with related other properties (such as mass, velocity...) as the following:
+| Position.x  | Position.y | Position.z | Property 1 | Property 2|
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| ... | ... | ... |...| ... |
+
+### Create particle visualization with Python scripting in Blender
+
+This is suitable for people who are used to python programming experience but are overwhelmed by the thousands buttons in 3D softwares. 
+
 #### Start creating particles in Blender
 1. Open Blender and create a new "General" file
     ![alt text](/Pictures/Create.png)
@@ -64,6 +64,20 @@ This is suitable for people who are used to python programming experience but ar
     * You will be able to see the following in the view port:
         ![alt text](/Pictures/ExampleData.png)
 
+## Density field data
+
+Density field data is another common data format people can use to create good visualization.
+
+Usually, they are represented as arrays in x\*x\*x shape where x is resolution of the field.
+
+### Create density field visualization with Python scripting in Blender
+1. Open Blender and create a new "General" file
+2. Navigate to the Scripting workspace from the top menu.
+3. Open the script file by selecting File -> Open and navigating to the script's location, or simply paste the example script into a new text block.
+4. Press Run Script to execute.
+5. ** If this does not make sense to you, see more detail with images from above.
+
+There is also an example blender file you can play around with. If you use the default script and data, you should see the following in Blender:
 
 ## Other useful things to look up: 
 - Blender scripting documentation
